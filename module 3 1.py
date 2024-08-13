@@ -3,15 +3,14 @@ def  count_calls():
     global calls
     calls += 1
 def string_info (string):
-        count_calls()
-        return (len(string), string.upper(), string.lower())
+    count_calls()
+    a = len(string)
+    b = string.upper()
+    c = string.lower()
+    return a, b, c
 def is_contains (string, list_to_search):
     count_calls()
-    for i in list_to_search:
-        string.upper()
-        list_to_search[i].upper()
-        if string == list_to_search[i]: #
-
+    return string.upper() in [s.upper() for s in list_to_search]
 
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
